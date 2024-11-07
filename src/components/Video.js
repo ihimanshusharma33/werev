@@ -14,7 +14,7 @@ const Video = () => {
         <div className="w-full py-2">
         <div className="w-full">
           <video autoPlay loop  playsInline muted={muted}   className='mx-auto videobox' >
-            <source src="https://youtu.be/wOAtb0XmOu4?si=Ey_BabCxU8bkb8CJ" type="video/mp4" />
+            <source src='../assests/bicyle.mp4' type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <button className='mute-button' onClick={()=>{handleMuteToggle();
