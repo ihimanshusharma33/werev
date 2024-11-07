@@ -17,7 +17,7 @@ const accessoriesItems = [
   {
     id: 2,
     name: "Charger",
-    imgsrc: charger
+    imgsrc: charger1
 
   },
   {
@@ -29,7 +29,7 @@ const accessoriesItems = [
   {
     id: 4,
     name: "Lock",
-    imgsrc: lock
+    imgsrc: lock1
 
   },
   {
