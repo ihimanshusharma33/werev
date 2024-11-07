@@ -17,6 +17,7 @@ const ProductOverview = () => {
             const module = await import(`../assests/data/${name}.json`);
             const productJson = module.default;
             setProductData(productJson);
+
             const mainImageModule = await import(`../assests/${name}/${name}1.jpg`);
             const mainImage = mainImageModule.default;
             setCourseuelimgae([mainImage]);
@@ -27,10 +28,20 @@ const ProductOverview = () => {
     const fetchAdditionalImages = async () => {
         try {
             const images = [];
-            for (let i = 2; i <= 10; i++) {
-                const imageModule = await import(`../assests/${name}/${name}${i}.jpg`);
-                images.push(imageModule.default);
+            if(name=='Fire'){
+                console.log('Fire is here');
+                for (let i = 2; i <= 8; i++) {
+                    const imageModule = await import(`../assests/${name}/${name}${i}.jpg`);
+                    images.push(imageModule.default);
+                }
             }
+            else{
+                for (let i = 2; i <= 10; i++) {
+                    const imageModule = await import(`../assests/${name}/${name}${i}.jpg`);
+                    images.push(imageModule.default);
+                }
+            }
+            
             setCourseuelimgae((prevImages) => [...prevImages, ...images]);
         } catch (error) {
             console.error('Error fetching additional images:', error);

@@ -15,8 +15,6 @@ const Video = () => {
       <div className="w-full">
         <video autoPlay loop playsInline muted={muted} className='mx-auto videobox' >
           <source src={Videosrc } type="video/mp4" />
-          <source src={Videosrc} type="video/webm" />
-          <source src={Videosrc} type="video/ogg" />
           Your browser does not support the video tag.
         </video>
         <button className='mute-button' onClick={() => {
