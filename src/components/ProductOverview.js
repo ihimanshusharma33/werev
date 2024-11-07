@@ -27,7 +27,7 @@ const ProductOverview = () => {
     const fetchAdditionalImages = async () => {
         try {
             const images = [];
-            for (let i = 2; i <= 11; i++) {
+            for (let i = 2; i <= 10; i++) {
                 const imageModule = await import(`../assests/${name}/${name}${i}.jpg`);
                 images.push(imageModule.default);
             }

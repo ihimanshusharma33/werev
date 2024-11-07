@@ -26,7 +26,7 @@ const Productlist = () => {
                 </div>
                 <section className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
                     {count.map((product) => (
-                        <div key={product.id} className="w-72 h-72 lg:h-80 lg:w-96  bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-2xl "
+                        <div key={product.id} className="w-72 h-72 lg:h-[24rem] lg:w-[28rem]  bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-2xl "
                             style={
                                 {
                                     position: 'relative', 
@@ -39,10 +39,10 @@ const Productlist = () => {
                                 <img
                                     src={product.img}
                                     alt="Product"
-                                    className="rounded-t-xl h-[72%] lg:h-[83%] w-96"
+                                    className="rounded-t-xl h-[72%] lg:h-[83%] w-full"
                                     style={{
                                         objectFit:' cover',
-                                        aspectRatio:'1/1',
+                                        aspectRatio:'4/2',
                                     }}
                                 />
                                 <div className="px-4 py-3 w-75">
