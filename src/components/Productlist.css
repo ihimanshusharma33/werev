@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.x-wid{
+    width: 28rem;
+    height: 24rem;
+    border: 12px solid red;
+}
+.md-wid{
+    width: 18rem;
+    height: 18rem;
+    border: 12px solid rgb(50, 50, 192);
+}

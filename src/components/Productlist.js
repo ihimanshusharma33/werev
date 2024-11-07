@@ -1,4 +1,5 @@
 import React from 'react'
+import './Productlist.css';
 import { Link } from 'react-router-dom';
 import img2 from '../assests/Ether/Ether1.jpg'
 import img1 from '../assests/Earth/Earth1.jpg'
@@ -25,12 +26,10 @@ const Productlist = () => {
                 </div>
                 <section className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
                     {count.map((product) => (
-                        <div key={product.id} className="w-full  bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-2xl "
+                        <div key={product.id} className="w-72 h-72 lg:h-80 lg:w-96  bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-2xl "
                             style={
                                 {
-                                    position: 'relative',
-                                    width: '28rem',
-                                    height: '24rem',
+                                    position: 'relative', 
                                     overflow:' hidden',
                                     border:'2px Soild Red'
                                 }
@@ -40,12 +39,10 @@ const Productlist = () => {
                                 <img
                                     src={product.img}
                                     alt="Product"
-                                    className="rounded-t-xl "
+                                    className="rounded-t-xl h-[72%] lg:h-[83%] w-96"
                                     style={{
                                         objectFit:' cover',
-                                        aspectRatio:'2/1',
-                                        margin:'auto',
-                                        height: '82%',
+                                        aspectRatio:'1/1',
                                     }}
                                 />
                                 <div className="px-4 py-3 w-75">
