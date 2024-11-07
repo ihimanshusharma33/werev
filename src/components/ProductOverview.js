@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import './coustem.css';
-import { RotatingLines } from 'react-loader-spinner'
-;
-  
+import { RotatingLines } from 'react-loader-spinner';
+
 const ProductOverview = () => {
     const { name } = useParams();
     const [productData, setProductData] = useState(null);
     const [coursuelImage, setCourseuelimgae] = useState([]);
     const [activeIndex, setActiveIndex] = useState(0);
-    
+
 
     const fetchData = async () => {
         try {
@@ -28,20 +27,20 @@ const ProductOverview = () => {
     const fetchAdditionalImages = async () => {
         try {
             const images = [];
-            if(name=='Fire'){
+            if (name == 'Fire') {
                 console.log('Fire is here');
-                for (let i = 2; i <= 8; i++) {
+                for (let i = 2; i <= 7; i++) {
                     const imageModule = await import(`../assests/${name}/${name}${i}.jpg`);
                     images.push(imageModule.default);
                 }
             }
-            else{
+            else {
                 for (let i = 2; i <= 10; i++) {
                     const imageModule = await import(`../assests/${name}/${name}${i}.jpg`);
                     images.push(imageModule.default);
                 }
             }
-            
+
             setCourseuelimgae((prevImages) => [...prevImages, ...images]);
         } catch (error) {
             console.error('Error fetching additional images:', error);
@@ -50,7 +49,7 @@ const ProductOverview = () => {
     useEffect(() => {
         fetchData();
         window.scrollTo(0, 0);
-    },[name]);
+    }, [name]);
     useEffect(() => {
         if (productData) {
             fetchAdditionalImages();
@@ -65,21 +64,21 @@ const ProductOverview = () => {
         setActiveIndex((prevIndex) => (prevIndex - 1 + coursuelImage.length) % coursuelImage.length);
     }
     if (!productData || coursuelImage.length === 0) {
-        return <div className='flex justify-center text-gray-900'>  
-        <RotatingLines
-        visible={true}
-        height="96"
-        width="96"
-        color="black"
-        strokeWidth="5"
-        animationDuration="0.75"
-        ariaLabel="rotating-lines-loading"
-        wrapperStyle={{}}
-        wrapperClass=""
-        /></div>;
+        return <div className='flex justify-center text-gray-900'>
+            <RotatingLines
+                visible={true}
+                height="96"
+                width="96"
+                color="black"
+                strokeWidth="5"
+                animationDuration="0.75"
+                ariaLabel="rotating-lines-loading"
+                wrapperStyle={{}}
+                wrapperClass=""
+            /></div>;
     }
 
-    const { detial, Motor, Lights, Horn, Keys, Carrier, Reflector, Battery, Charger, PowerSpecifications, Mode, Display, DeliveryOption, Service, ManualHandbook, Design, Other } = productData;
+    const { detial, Motor, Lights, Horn, Keys, Carrier, Reflector, Battery, Charger, PowerSpecifications, Mode, Display, DeliveryOption, Service, ManualHandbook, Design, Other, Link } = productData;
 
 
     return (
@@ -110,10 +109,12 @@ const ProductOverview = () => {
                     </div>
                 </div>
             </div>
+            <a href={Link}>
             <button className="bg-black text-white py-2 px-4 flex items-center rounded-2xl mx-auto mt-8">
                 <img src='https://icon-library.com/images/cart-icon-png-white/cart-icon-png-white-2.jpg' className='w-8 h-8'></img>
                 Buy Now
             </button>
+            </a>
 
             <div >
                 <div className="product-info-table overflow-x-auto p-4">
