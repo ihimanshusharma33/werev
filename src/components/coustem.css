@@ -15,7 +15,7 @@
     height: 38.125rem;
     margin: auto;
     display: block;
-
+    border: 2px solid  rgb(0, 0, 0);
 }
 .mute-button{
     border: 2px solid black;
