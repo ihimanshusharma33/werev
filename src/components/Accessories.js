@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import bag from '../assests/accessories/bag1.jpg'
 import holder1 from '../assests/accessories/holder1.jpg'
-import halmet from '../assests/accessories/halmet1.jpg'
+import halmet1 from '../assests/accessories/halmet1.jpg'
 import charger from '../assests/accessories/Charger1.jpg'
 import lock from '../assests/accessories/lock1.jpg'
 import Airpump from '../assests/accessories/Airpump.jpg'
@@ -12,7 +11,7 @@ const accessoriesItems = [
   {
     id: 1,
     name: "Halmet",
-    imgsrc: halmet
+    imgsrc: halmet1
 
   },
   {
