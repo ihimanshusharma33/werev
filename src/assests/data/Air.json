@@ -1,0 +1,60 @@
+{
+  "detial": {
+    "Name": "Air",
+    "id": 3
+  },
+  "Motor": {
+    "Power": "250 watt Rear Drive",
+    "Torque": "40 Nm ~ 50Nm (*)",
+    "Speed": "25kmph Maximum (*)",
+    "Range": "50 ~ 60kms with PAS (*)",
+    "LoadCapacity": "120 kg. Maximum (*)"
+  },
+  "Lights": {
+    "Front": "LED (White)",
+    "Rear": "LED (Red)"
+  },
+  "Horn": "Yes",
+  "Keys": {
+    "Sets": 2,
+    "Types": "Battery Lock , ON/OFF Key",
+    "TypeDetails": "Heavy Duty Big Size"
+  },
+  "Carrier": "Yes",
+  "Reflector": {
+    "Available": true,
+    "Colors": [
+      "White",
+      "Yellow",
+      "Red"
+    ]
+  },
+  "Battery": {
+    "Type": "Lithium Ion (Cylindrical Cell) Panasonic",
+    "Detachable": true,
+    "Capacity": "280 Whr",
+    "Life": {
+      "Warranty": "2 Years*",
+      "Cycles": "~1500 discharge cycles"
+    }
+  },
+  "Charger": {
+    "Type": "2A",
+    "ChargingTime": "3 hours"
+  },
+  "PowerSpecifications": {
+    "Voltage": "36 VDC",
+    "Controller": "10A~15A"
+  },
+  "Other": {
+    "RiderHeight": " 5' 2'' ~ 6' 4'' ",
+    "RiderWeight": " 120 kg."
+  },
+  "Link": "https://amzn.in/d/eNWlYUE",
+  "Mode": "5 modes PAS (Cruise Also)",
+  "Display": "Digital (Speed + Brake + Cruise + Battery Level + Error Code)",
+  "Design": "Ergonomics Saddle",
+  "DeliveryOption": "90% Assembled in a Corrugated Box (All over India)",
+  "Service": "24/7 via Video Call and Tele Call",
+  "ManualHandbook": "Yes"
+}
