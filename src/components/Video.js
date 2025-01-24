@@ -1,5 +1,4 @@
 import React,{useState} from 'react'
-import Videosrc from '../assests/bicyle.mp4'
 import './coustem.css'
 import mute from '../assests/mute.png'
 import unmute from '../assests/unmute.png'
@@ -14,7 +13,7 @@ const Video = () => {
         <div className="w-full py-2">
         <div className="w-full">
           <video autoPlay loop  playsInline muted={muted}   className='mx-auto videobox' >
-            <source src={Videosrc} type="video/mp4" />
+            <source src="https://res.cloudinary.com/dcliahekv/video/upload/zjfvgog6u08hvxguowrz.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <button className='mute-button' onClick={()=>{handleMuteToggle();
