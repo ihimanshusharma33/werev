@@ -86,9 +86,9 @@ const ProductOverview = () => {
             <div className='grid grid-cols-1 lg:grid-cols-5 gap-4'>
                 <div className=' lg:col-span-4 '>
                     <div className='mx-auto relative' >
-                        <button className='absolute top-1/2 left-2 transform-translate-y-1/2   text-yellow-700 text-3xl ' onClick={() => { gotoNext() }}> &lt;</button>
+                        <button className='absolute top-1/2 left-2 transform-translate-y-1/2   text-yellow-700 text-3xl ' onClick={() => { gotoPrev() }}> &lt;</button>
                         <img src={coursuelImage[activeIndex]} className='courselimg object-contain' alt='Carousel Item' loading='lazy'></img>
-                        <button className='absolute top-1/2 right-2 transform-translate-y-1/2  text-yellow-700  text-3xl ' onClick={() => { gotoPrev() }}>&gt;</button>
+                        <button className='absolute top-1/2 right-2 transform-translate-y-1/2  text-yellow-700  text-3xl ' onClick={() => {  gotoNext()}}>&gt;</button>
 
                     </div>
                     <h2 className='text-2xl text-gray-800 font-bold'>{detial.Name}</h2>
