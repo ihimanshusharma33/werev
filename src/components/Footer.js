@@ -155,7 +155,7 @@ const Footer = () => {
         </div>
         {/*Copyright section*/}
         <div className="bg-black text-white text-center">
-          <span>© 2024-2025 Copyright reserved</span>
+          <span>© 2025-2026 Copyright reserved</span>
          
         </div>
       </footer>

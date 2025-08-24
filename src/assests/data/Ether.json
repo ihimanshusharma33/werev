@@ -7,7 +7,7 @@
       "Power": "250 watt Rear Drive",
       "Torque": "40 Nm ~ 50Nm (*)",
       "Speed": "25kmph Maximum (*)",
-      "Range": "50 ~ 60 kms with PAS (*)",
+      "Range": "50 ~ 60 kms with PAS (*)/ 70-80 kms with PAS (*)",
       "LoadCapacity": "120 kg. Maximum (*)"
     },
     "Lights": {
@@ -28,7 +28,7 @@
     "Battery": {
       "Type": "Lithium Ion (Cylindrical Cell) Panasonic",
       "Detachable": true,
-      "Capacity": "280 Whr",
+      "Capacity": "280 Whr(7.8 Ah)/ 380Whr (10.4 Ah) (*)",
       "Life": {
         "Warranty": "2 Years*",
         "Cycles": "~1500 discharge cycles"

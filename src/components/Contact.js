@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import Img from '../assests/Map.jpg';
 const Contact = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -91,6 +91,10 @@ const Contact = () => {
                             {sendingMessage}
                         </div>
                     )}
+                    <div className='lg:flex lg:justify-between px-4 py-8'>
+                        <div className="w-full lg:w-1/2 flex justify-center mb-8 lg:mb-0">
+                            <img src={Img}  className="max-w-xs w-full h-auto rounded-lg shadow-lg border border-gray-200 object-cover"></img>
+                        </div>
 
                     <form className="w-full lg:w-1/3 mx-auto p-8 bg-white shadow-md rounded-md" onSubmit={sendMail}>
                         <div className="mb-6">
@@ -137,6 +141,8 @@ const Contact = () => {
                             Send Message
                         </button>
                     </form>
+
+                    </div>
                 </div>
             </section>
             <div className=' mb-6 lg:flex lg:justify-between'>
